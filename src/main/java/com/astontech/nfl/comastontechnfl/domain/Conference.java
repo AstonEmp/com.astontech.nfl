@@ -1,9 +1,11 @@
 package com.astontech.nfl.comastontechnfl.domain;
 
+import com.sun.org.apache.xpath.internal.operations.Div;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -20,7 +22,7 @@ public class Conference
 
     @OneToMany
     @JoinColumn(name = "ConferenceId")
-    private Division division;
+    private List<Division> divisionList;
 
     private String conferenceName;
 
