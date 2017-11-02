@@ -31,4 +31,8 @@ public class Team
     @JoinColumn(name = "TeamId")
     private FrontOffice frontOffice;
 
+    @OneToMany
+    @JoinColumn(name = "TeamId")
+    private List<Player> playerList;
+
 }

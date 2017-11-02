@@ -1,0 +1,25 @@
+#logo
+{
+    float: left;
+    width:125px;
+    height:100%;
+}
+.navbar-brand {
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+.footer {
+    background-color: #2a435f;
+    bottom: -100px;
+    height:60px;
+    position:absolute;
+    width:100%;
+}
+
+#footer_text {
+    color: seashell;
+}
+
+

@@ -8,22 +8,20 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-public class Record
+public class Player
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "RecordId")
+    @Column(name = "PlayerId")
     private Integer id;
 
     @Version
     private Integer version;
 
-    private byte wins;
+    private String firstName;
 
-    private byte losses;
+    private String lastName;
 
-    private byte ties;
-
-    private String seasonSpan;
+    private String position;
 
 }
