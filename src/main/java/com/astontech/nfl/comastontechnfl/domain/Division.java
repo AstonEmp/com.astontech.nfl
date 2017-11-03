@@ -19,7 +19,7 @@ public class Division
     @Version
     private Integer version;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "DivisionId")
     private List<Team> teamList;
 }

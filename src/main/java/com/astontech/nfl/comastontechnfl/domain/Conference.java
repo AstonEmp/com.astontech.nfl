@@ -20,7 +20,7 @@ public class Conference
     @Version
     private Integer version;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "ConferenceId")
     private List<Division> divisionList;
 

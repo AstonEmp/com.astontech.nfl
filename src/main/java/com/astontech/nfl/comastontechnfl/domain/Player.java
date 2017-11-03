@@ -24,4 +24,8 @@ public class Player
 
     private String position;
 
+    private int rookieSeason;
+
+    private String lastSeason;
+
 }

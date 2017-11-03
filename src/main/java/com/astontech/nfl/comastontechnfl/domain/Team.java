@@ -23,15 +23,15 @@ public class Team
 
     private String homeTown;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "TeamId")
     private List<Record> recordList;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "TeamId")
     private FrontOffice frontOffice;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "TeamId")
     private List<Player> playerList;
 
