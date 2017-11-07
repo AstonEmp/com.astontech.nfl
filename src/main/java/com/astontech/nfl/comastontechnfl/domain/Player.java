@@ -26,6 +26,10 @@ public class Player
 
     private int rookieSeason;
 
-    private String lastSeason;
+    private int lastSeason;
+
+    private int jerseyNumber;
+
+    private String status;
 
 }

@@ -18,11 +18,11 @@ public class Record
     @Version
     private Integer version;
 
-    private byte wins;
+    private int wins;
 
-    private byte losses;
+    private int losses;
 
-    private byte ties;
+    private int ties;
 
     private String seasonSpan;
 

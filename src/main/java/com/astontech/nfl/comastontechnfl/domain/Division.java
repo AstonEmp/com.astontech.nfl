@@ -2,6 +2,7 @@ package com.astontech.nfl.comastontechnfl.domain;
 
 import lombok.Getter;
 import lombok.Setter;
+import sun.awt.geom.AreaOp;
 
 import javax.persistence.*;
 import java.util.List;
@@ -19,7 +20,7 @@ public class Division
     @Version
     private Integer version;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "DivisionId")
     private List<Team> teamList;
 }

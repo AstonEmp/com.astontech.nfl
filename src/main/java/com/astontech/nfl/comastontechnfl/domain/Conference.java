@@ -20,7 +20,7 @@ public class Conference
     @Version
     private Integer version;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "ConferenceId")
     private List<Division> divisionList;
 
