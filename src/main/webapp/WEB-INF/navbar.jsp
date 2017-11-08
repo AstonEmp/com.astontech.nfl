@@ -10,7 +10,7 @@
             <a class="navbar-brand pull-left" href="#"><img id="logo" src="${pageContext.servletContext.contextPath}/static/images/aston.png"></a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="conference-dropdowns">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AFC <span class="caret"></span></a>
@@ -44,7 +44,7 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>
         </div>
     </div>

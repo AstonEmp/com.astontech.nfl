@@ -243,9 +243,7 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent>
         vikings.setRecordList(vikingsRecord);
         vikings.setPlayerList(vikingsPlayers);
         vikings.setFrontOffice(vikingsOffice);
-        System.out.println(vikings.getFrontOffice().getHeadCoach());
         teamService.saveTeam(vikings);
-//        System.out.println(teamService.getTeamById(20).getFrontOffice().getHeadCoach());
 
         Team patriots = new Team();
         patriots.setHomeTown("New England");

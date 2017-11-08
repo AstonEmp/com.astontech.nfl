@@ -24,15 +24,12 @@ public class Team
     private String homeTown;
 
     @OneToMany(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "TeamId")
     private List<Record> recordList;
 
     @OneToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
-    @JoinColumn(name = "TeamId")
     private FrontOffice frontOffice;
 
     @OneToMany(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "TeamId")
     private List<Player> playerList;
 
 }
