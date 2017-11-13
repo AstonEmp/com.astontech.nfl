@@ -407,12 +407,12 @@
       <workItem from="1509654077691" duration="7866000" />
       <workItem from="1509727532139" duration="4155000" />
       <workItem from="1509978444436" duration="27461000" />
-      <workItem from="1510149174428" duration="6426000" />
+      <workItem from="1510149174428" duration="6448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96948000" />
+    <option name="totallyTimeSpent" value="96970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1920" height="1080" extended-state="6" />
@@ -428,7 +428,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20842105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26520813" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -787,8 +787,8 @@
         <state relative-caret-position="68">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
           <folding>
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="false" />
+            <element signature="e#734#735#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -798,11 +798,11 @@
         <state relative-caret-position="595">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
+            <element signature="e#959#960#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -812,11 +812,11 @@
         <state relative-caret-position="408">
           <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
+            <element signature="e#959#960#0" expanded="false" />
           </folding>
         </state>
       </provider>
