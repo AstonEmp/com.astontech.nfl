@@ -7,6 +7,10 @@
 <head>
     <%--FAVICON--%>
 
+    <%--REACT-DOM--%>
+    <c:url value="webjars/react-dom/16.1.0/cjs/react-dom.development.js" />
+    <script src="${react-dom}"></script>
+
     <%--JQUERY--%>
     <c:url value="/webjars/jquery/2.1.4/jquery.min.js" var="jquery" />
     <script src="${jquery}"></script>
@@ -14,9 +18,7 @@
     <%--BOOTSTRAP--%>
     <c:url value="/webjars/bootstrap/3.3.4/js/bootstrap.min.js" var="bootstrapJS"/>
     <script src="${bootstrapJS}"></script>
-    <%--<c:url value="/webjars/bootstrap/3.3.4/css/bootstrap.min.css" var="bootstrapCSS"/>--%>
-    <%--<link href="${bootstrapCSS}" rel="stylesheet" media="screen" />--%>
-    <%--BOOTSWATCH--%>
+
     <c:url value="/static/css/bootswatch_spacelab.css" var="bootstrapCSS"/>
     <link href="${bootstrapCSS}" rel="stylesheet" media="screen" />
 

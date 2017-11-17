@@ -23,4 +23,6 @@ public class Division
     @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "DivisionId")
     private List<Team> teamList;
+
+    private String divisionName;
 }
