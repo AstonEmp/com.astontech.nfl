@@ -23,7 +23,11 @@ function getConferences() {
                 );
 
                 $.each(division.teamList, function (_, team) {
-
+                    $li.append(
+                        "<li class='dropdown-submenu'>"
+                        + "<a href='/conference/" + conference.id + "/division/" + division.id + "/team/" + team.id + "'>"
+                        + team.teamName + "</a>" + "</li>"
+                    )
                 });
             });
         });
