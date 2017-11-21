@@ -13,23 +13,14 @@
         <div class="collapse navbar-collapse" id="conference-dropdowns">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AFC <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">NFC <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a>
-
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AFC<span class="caret"></span></a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                        <li class="dropdown-submenu">
+                            <li><a href="/conference/1/division/1">AFC South</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a href="/conference/1/division/1/team/1">Colts</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>
             </ul>

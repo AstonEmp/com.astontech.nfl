@@ -7,10 +7,6 @@
 <head>
     <%--FAVICON--%>
 
-    <%--REACT-DOM--%>
-    <c:url value="webjars/react-dom/16.1.0/cjs/react-dom.development.js" />
-    <script src="${react-dom}"></script>
-
     <%--JQUERY--%>
     <c:url value="/webjars/jquery/2.1.4/jquery.min.js" var="jquery" />
     <script src="${jquery}"></script>
