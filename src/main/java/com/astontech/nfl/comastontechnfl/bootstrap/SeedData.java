@@ -360,15 +360,19 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent>
 
         Division afcSouth = new Division();
         afcSouth.setTeamList(afcSouthList);
+        afcSouth.setDivisionName("AFC South");
 
         Division afcEast = new Division();
         afcEast.setTeamList(afcEastList);
+        afcEast.setDivisionName("AFC East");
 
         Division afcNorth = new Division();
         afcNorth.setTeamList(afcNorthList);
+        afcNorth.setDivisionName("AFC North");
 
         Division afcWest = new Division();
         afcWest.setTeamList(afcWestList);
+        afcWest.setDivisionName("AFC West");
 
         List<Division> afcDivisions = new ArrayList<>();
         afcDivisions.add(afcEast);
@@ -378,15 +382,19 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent>
 
         Division nfcSouth = new Division();
         nfcSouth.setTeamList(nfcSouthList);
+        nfcSouth.setDivisionName("NFC South");
 
         Division nfcEast = new Division();
         nfcEast.setTeamList(nfcEastList);
+        nfcEast.setDivisionName("NFC East");
 
         Division nfcNorth = new Division();
         nfcNorth.setTeamList(nfcNorthList);
+        nfcNorth.setDivisionName("NFC North");
 
         Division nfcWest = new Division();
         nfcWest.setTeamList(nfcWestList);
+        nfcWest.setDivisionName("NFC West");
 
         List<Division> nfcDivisions = new ArrayList<>();
         nfcDivisions.add(nfcEast);
