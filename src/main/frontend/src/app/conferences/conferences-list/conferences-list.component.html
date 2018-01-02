@@ -1,3 +1,17 @@
-<p>
-  conferences-list works!
-</p>
+<div class="container">
+<ul ngClass="list-group" *ngFor="let conference of conferenceList">
+  <a [routerLink]="['/conference', conference.id]" ngClass="list-group-item list-group-item-action"> {{conference.conferenceName}} </a>
+    <ul *ngFor="let division of conference.divisionList">
+      <a [routerLink]="['/division', division.id]" ngClass="list-group-item list-group-item-action">{{division.divisionName}}</a>
+        <ul *ngFor="let team of division.teamList">
+          <a [routerLink]="['/team', team.id]" ngClass="list-group-item list-group-item-action">{{team.homeTown}} {{team.teamName}}</a>
+            <ul *ngIf="team.frontOffice">
+              <li ngClass="list-group-item">{{team.frontOffice.generalManager}}</li>
+              <li ngClass="list-group-item">{{team.frontOffice.headCoach}}</li>
+              <li ngClass="list-group-item">{{team.frontOffice.owner}}</li>
+            </ul>
+        </ul>
+    </ul>
+</ul>
+</div>
+

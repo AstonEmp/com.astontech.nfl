@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ConferenceService} from "../conferences/conference.service";
+import {Conference} from "../conferences/conference.model";
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  conferenceList: Conference[] = [];
+
+  constructor(private conferenceService: ConferenceService) { }
 
   ngOnInit() {
+    this.conferenceService.getConferences()
+      .subscribe(
+        (conferences: any[]) => {
+          console.log("Conferences: " + conferences);
+          this.conferenceList = conferences;
+        },
+        (error) => console.log(error)
+      )
   }
 
 }

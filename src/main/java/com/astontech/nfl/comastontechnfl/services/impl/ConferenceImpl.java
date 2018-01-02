@@ -1,6 +1,7 @@
 package com.astontech.nfl.comastontechnfl.services.impl;
 
 import com.astontech.nfl.comastontechnfl.domain.Conference;
+import com.astontech.nfl.comastontechnfl.domain.Division;
 import com.astontech.nfl.comastontechnfl.repositories.ConferenceRepository;
 import com.astontech.nfl.comastontechnfl.services.ConferenceService;
 import org.springframework.beans.factory.annotation.Autowired;

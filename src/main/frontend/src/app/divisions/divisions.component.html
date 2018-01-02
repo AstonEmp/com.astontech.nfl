@@ -1,3 +1,20 @@
-<p>
-  divisions works!
-</p>
+<div class="container">
+  <h2>Division Page</h2>
+  <table *ngIf="division" ngClass="table table-hover">
+    <thead ngClass="thead-dark">
+      <tr>
+        <th scope="col">Team</th>
+        <th scope="col">Record</th>
+        <th scope="col">Front Office</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of division.teamList">
+        <span *ngFor="let frontOffice of team.frontOffice"></span>
+          <td>{{team.homeTown}} {{team.teamName}}</td>
+          <!--<td>{{team.recordList.forEach().wins}}, {{team.frontOffice.generalManager}}, {{team.frontOffice.headCoach}}</td>-->
+          <td>{{frontOffice.owner}}, {{frontOffice.generalManager}}, {{frontOffice.headCoach}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -17,4 +17,8 @@ export class ConferenceService {
     return this.http.get('/api/conference');
   }
 
+  getConference(id:number): Observable<any> {
+    return this.http.get('api/conference/' + id);
+  }
+
 }

@@ -1,11 +1,14 @@
 package com.astontech.nfl.comastontechnfl.rest;
 
 import com.astontech.nfl.comastontechnfl.domain.Conference;
+import com.astontech.nfl.comastontechnfl.domain.Division;
 import com.astontech.nfl.comastontechnfl.services.ConferenceService;
+import com.astontech.nfl.comastontechnfl.services.DivisionService;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @Log4j
 @RestController
 @RequestMapping("/api/conference")
@@ -19,7 +22,7 @@ public class ConferenceRest
         this.conferenceService = conferenceService;
     }
 
-    @GetMapping("/")
+    @GetMapping(value = {"", "/"})
     public Iterable<Conference> getAll()
     {
         return conferenceService.listAllConferences();

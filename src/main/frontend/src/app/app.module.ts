@@ -24,7 +24,24 @@ import { RecordsAddComponent } from './records/records-add/records-add.component
 import { RecordsListComponent } from './records/records-list/records-list.component';
 import { FrontofficesAddComponent } from './frontoffices/frontoffices-add/frontoffices-add.component';
 import { FrontofficesListComponent } from './frontoffices/frontoffices-list/frontoffices-list.component';
+import {ConferenceService} from "./conferences/conference.service";
+import { RouterModule, Routes} from "@angular/router";
+import { HomeComponent } from './home/home.component';
+import {DivisionService} from "./divisions/division.service";
+import {TeamService} from "./teams/team.service";
 
+
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch:'full' }, //pathMatch is needed for redirects
+  { path: 'division/:id', component: DivisionsComponent },
+  { path: 'team/:id', component: TeamsComponent },
+  { path: 'conference/:id', component: ConferencesComponent },
+  { path: 'division', component: DivisionsListComponent },
+  { path: 'conference', component: ConferencesListComponent },
+  { path: 'team', component: TeamsListComponent },
+  { path: '**', redirectTo: '/home', pathMatch:'full' }
+];
 
 @NgModule({
   declarations: [
@@ -47,14 +64,19 @@ import { FrontofficesListComponent } from './frontoffices/frontoffices-list/fron
     RecordsAddComponent,
     RecordsListComponent,
     FrontofficesAddComponent,
-    FrontofficesListComponent
+    FrontofficesListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    ConferenceService,
+    DivisionService,
+    TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

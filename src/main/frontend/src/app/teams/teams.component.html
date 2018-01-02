@@ -1,3 +1,21 @@
-<p>
-  teams works!
-</p>
+<div class="container">
+  <ul ngClass="list-group" *ngIf="team">
+    <a [routerLink]="['/team', team.id]" ngClass="list-group-item list-group-item-action"> {{team.teamName}} </a>
+    <ul *ngIf="team.frontOffice">
+      <li ngClass="list-group-item">{{team.frontOffice.generalManager}}</li>
+      <li ngClass="list-group-item">{{team.frontOffice.headCoach}}</li>
+      <li ngClass="list-group-item">{{team.frontOffice.owner}}</li>
+    </ul>
+    <ul ngClass="list-group-item" *ngFor="let record of recordList">
+      <li ngClass="list-group-item">Season: {{record.seasonSpan}}</li>
+      <li ngClass="list-group-item">Record: {{record.wins}}-{{record.losses}}-{{record.ties}}</li>
+    </ul>
+    <ul ngClass="list-group-item" *ngFor="let player of playerList">
+      <li ngClass="list-group-item">Player: {{player.firstName}} {{player.lastName}}</li>
+      <li ngClass="list-group-item">Position: {{player.position}}</li>
+      <li ngClass="list-group-item">#{{player.jerseyNumber}}</li>
+      <li ngClass="list-group-item">Active Years: {{player.rookieSeason}}{{player.lastSeason}}</li>
+      <li ngClass="list-group-item">Current Status: {{player.status}}</li>
+    </ul>
+  </ul>
+</div>

@@ -3,14 +3,15 @@ import {Player} from "../players/player.model";
 import {Record} from "../records/record.model";
 
 export class Team {
+  public id: number;
   public teamName: String;
   public homeTown: String;
-  public recordList: Array<Record>;
+  public recordList: Record[];
   public frontOffice: FrontOffice;
-  public playerList: Array<Player>;
+  public playerList: Player[];
 
-  constructor(teamName: String, homeTown: String, recordList: Array<Record>,
-              frontOffice: FrontOffice, playerList: Array<Player>) {
+  constructor(teamName: String, homeTown: String, recordList: Record[],
+              frontOffice: FrontOffice, playerList: Player[]) {
     this.teamName = teamName;
     this.homeTown = homeTown;
     this.recordList = recordList;
